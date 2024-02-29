@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health in the USA</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Correlation of Poverty and High Cholesterol in America</h1>    
+
+    <div id="data-select">
+        <label for="data-select">Select Data Categories: </label>
+        <select id="primary-select">
+          <option value="poverty_perc">Poverty %</option>
+          <option value="median_household_income">Median Household Income</option>
+          <option value="education_less_than_high_school_percent">Education Less Than High School %</option>
+          <option value="air_quality">Air Quality</option>
+          <option value="park_access">Park Access</option>
+          <option value="percent_inactive">Inactive %</option>
+          <option value="percent_smoking">Smoking %</option>
+          <!-- <option value="urban_rural_status">Urban Rural Percentage</option> -->
+          <option value="elderly_percentage">Elderly %</option>
+          <option value="number_of_hospitals">Number of Hospitals</option>
+          <option value="number_of_primary_care_physicians">Number of Primary Care Physicians</option>
+          <option value="percent_no_heath_insurance">No Health Insurance %</option>
+          <option value="percent_high_blood_pressure">High Blood Pressure %</option>
+          <option value="percent_coronary_heart_disease">Coronary Heart Disease %</option>
+          <option value="percent_stroke">Stroke %</option>
+          <option value="percent_high_cholesterol">High Cholesterol %</option>
+        </select>
+        <select id="secondary-select">
+          <option value="percent_high_cholesterol">High Cholesterol</option>
+          <option value="poverty_perc">Poverty %</option>
+          <option value="median_household_income">Median Household Income</option>
+          <option value="education_less_than_high_school_percent">Education Less Than High School %</option>
+          <option value="air_quality">Air Quality</option>
+          <option value="park_access">Park Access</option>
+          <option value="percent_inactive">Inactive %</option>
+          <option value="percent_smoking">Smoking %</option>
+          <!-- <option value="urban_rural_status">Urban Rural Percentage</option> -->
+          <option value="elderly_percentage">Elderly %</option>
+          <option value="number_of_hospitals">Number of Hospitals</option>
+          <option value="number_of_primary_care_physicians">Number of Primary Care Physicians</option>
+          <option value="percent_no_heath_insurance">No Health Insurance %</option>
+          <option value="percent_high_blood_pressure">High Blood Pressure %</option>
+          <option value="percent_coronary_heart_disease">Coronary Heart Disease %</option>
+          <option value="percent_stroke">Stroke %</option>
+          </select>
+      </div>
+      <div id="container">
+        <div id="mapContainer">
+            <div id="map"></div>
+        </div>
+        <div id="histogramContainer">
+            <div id="histogram"></div>
+        </div>
+        <div id="scatter"></div>
+    </div>
+
+    <svg height="5" width="5" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <pattern id="lightstripe" patternUnits="userSpaceOnUse" width="5" height="5"> <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg==" x="0" y="0" width="5" height="5"> </image> </pattern> </defs></svg>
+    
+    <div id="tooltip"></div>
+
+    <script src="js/d3.v6.min.js"></script>
+    <script src="js/topojson.v3.js"></script>
+    <script src="js/main.js"></script>
+
+      
+    <!-- <script src="js/button1.js"></script> -->
+    <script src="js/povertyMap.js"></script>
+    <script src="js/cholesterolMap.js"></script>
+    <script src="js/povertyHistogram.js"></script>
+    <script src="js/cholesterolHistogram.js"></script>
+    <script src="js/cholesterolScatter.js"></script>
+    <script src="js/dataStore.js"></script>
+</body>
+</html>
